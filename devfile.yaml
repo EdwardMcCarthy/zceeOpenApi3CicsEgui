@@ -21,7 +21,7 @@ components:
           - name: CICS_HOST
             value: wtsc74.pbm.ihost.com
           - name: CICS_PORT
-            value: 33067
+            value: "33067"
           - name: CICS_USER
             value: ZCXPRV1
           - name: CICS_PASSWORD
