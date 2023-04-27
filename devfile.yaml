@@ -5,5 +5,5 @@ components:
 
     - name: che-workspace
       container:
-        image: 'registry.redhat.io/devspaces/udi-rhel8@sha256:99ff1b5c541855e4cf368816c4bcdcdc86d32304023f72c4443213a4032ef05b';
+        image: 'registry.redhat.io/devspaces/udi-rhel8@sha256:99ff1b5c541855e4cf368816c4bcdcdc86d32304023f72c4443213a4032ef05b'
         memoryLimit: 1024Mi
