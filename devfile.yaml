@@ -26,6 +26,6 @@ components:
             value: ZCXPRV1
           - name: CICS_PASSWORD
             value: ZCXDH650
-        image: 'icr.io/zosconnect/ibm-zcon-designer:3.0.66';
+        image: 'icr.io/zosconnect/ibm-zcon-designer:3.0.66'
         memoryLimit: 4927M
         mountSources: true
