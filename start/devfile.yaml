@@ -8,12 +8,12 @@ projects:
       checkoutFrom:
         revision: main
       remotes:
-        origin: 'https://github.com/EdwardMcCarthy/zceeOpenApi3CicsEgui.git';
+        origin: 'https://github.com/EdwardMcCarthy/zceeOpenApi3CicsEgui.git'
     name: employees-api
 components:
     - name: che-workspace
       container:
-        image: 'registry.redhat.io/devspaces/udi-rhel8@sha256:99ff1b5c541855e4cf368816c4bcdcdc86d32304023f72c4443213a4032ef05b';
+        image: 'registry.redhat.io/devspaces/udi-rhel8@sha256:99ff1b5c541855e4cf368816c4bcdcdc86d32304023f72c4443213a4032ef05b'
         memoryLimit: 1024Mi
     - name: zosconnect
       container:
@@ -34,6 +34,6 @@ components:
             value: ZCXPRV1
           - name: CICS_PASSWORD
             value: ZCXDH650
-        image: 'icr.io/zosconnect/ibm-zcon-designer:3.0.66';
+        image: 'icr.io/zosconnect/ibm-zcon-designer:3.0.66'
         memoryLimit: 4927M
         mountSources: true
