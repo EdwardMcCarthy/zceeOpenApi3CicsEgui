@@ -11,11 +11,14 @@ projects:
         origin: 'https://github.com/EdwardMcCarthy/zceeOpenApi3CicsEgui.git'
     name: cicsegui-api
 components:
-    - mountSources: true
     - name: che-workspace
       container:
         image: 'registry.redhat.io/devspaces/udi-rhel8@sha256:99ff1b5c541855e4cf368816c4bcdcdc86d32304023f72c4443213a4032ef05b'
         memoryLimit: 1024Mi
+        volumeMounts: 
+          - name: data
+            path: /projects/cics-egui-api/start
+        mountSources: true
     - name: zosconnect
       container:
         endpoints:
