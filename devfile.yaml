@@ -9,7 +9,7 @@ projects:
         revision: main
       remotes:
         origin: 'https://github.com/EdwardMcCarthy/zceeOpenApi3CicsEgui.git'
-    name: cicsEgui-api
+    name: cicsegui-api
 components:
 
     - name: che-workspace
