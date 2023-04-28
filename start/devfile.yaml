@@ -1,6 +1,6 @@
 schemaVersion: 2.1.0
 metadata:
-  name: sample-db2-api
+  name: cics-egui-api
 attributes:
   controller.devfile.io/storage-type: ephemeral
 projects:
@@ -9,7 +9,7 @@ projects:
         revision: main
       remotes:
         origin: 'https://github.com/EdwardMcCarthy/zceeOpenApi3CicsEgui.git'
-    name: employees-api
+    name: cics-egui-api
 components:
     - name: che-workspace
       container:
