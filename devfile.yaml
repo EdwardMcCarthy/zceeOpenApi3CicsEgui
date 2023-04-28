@@ -1,6 +1,15 @@
 schemaVersion: 2.1.0
 metadata:
   name: zcee-openapi3-cics-demo
+attributes:
+  controller.devfile.io/storage-type: ephemeral
+projects:
+  - git:
+      checkoutFrom:
+        revision: main
+      remotes:
+        origin: 'https://github.com/zosconnect/sample-db2-api.git';
+    name: cicsEgui-api
 components:
 
     - name: che-workspace
