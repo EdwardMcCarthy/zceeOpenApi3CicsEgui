@@ -18,10 +18,6 @@ components:
         volumeMounts: 
           - name: data
             path: /projects/cics-egui-api/start
-        mountSources: true
-    - name: data
-      volume:
-         size: 1G
     - name: zosconnect
       container:
         endpoints:
