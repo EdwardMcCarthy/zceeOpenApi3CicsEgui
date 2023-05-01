@@ -27,13 +27,22 @@ components:
           - name: ZCON_DESIGNER_PROJECT
             value: /projects/cics-egui-api/start
           - name: CICS_HOST
-            value: 1.2.3.4
+            valueFrom:
+              secretKeyRef:
+                name: zcee-openapi3-cics-credentials
+                key: CICS_HOST
           - name: CICS_PORT
             value: "33067"
           - name: CICS_USER
-            value: ZCXPRV1
+            valueFrom:
+              secretKeyRef:
+                name: zcee-openapi3-cics-credentials
+                key: CICS_USER
           - name: CICS_PASSWORD
-            value: pppp
+            valueFrom:
+              secretKeyRef:
+                name: zcee-openapi3-cics-credentials
+                key: CICS_PASSWORD
         image: 'icr.io/zosconnect/ibm-zcon-designer:3.0.66'
         memoryLimit: 4927M
         mountSources: true
